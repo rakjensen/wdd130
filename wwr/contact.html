@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/rafting1.css">
+        <link rel="stylesheet" href="styles/rafting.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
         </header>
         <main>
             <section class="contact">
-                <h1>Contact US</h1>
+                <!-- <h1>Contact US</h1> -->
                 <h2>Send Us a Message</h2>
                 <p>White Water Rafting</p>
                 <p>Phone: 000 111 22 333</p>
@@ -33,18 +33,19 @@
                     "allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
+            <h2>Meet our team</h2>
             <section class="employee">
                 <figure>
                     <img src="images/staff1.webp" alt="rafting staff1">
-                    <figcaption>Henry|River Guide</figcaption>
+                    <figcaption>Henry | River Guide</figcaption>
                 </figure>
                 <figure>
                     <img src="images/staff2.webp" alt="rafting staff2">
-                    <figcaption>Clara|Instructor</figcaption>
+                    <figcaption>Clara | Instructor</figcaption>
                 </figure>
                 <figure>
                     <img src="images/staff3.webp" alt="rafting staff3">
-                    <figcaption>Jessy|River Guide</figcaption>
+                    <figcaption>Jessy | River Guide</figcaption>
                 </figure>
             </section>
             <form>
@@ -61,12 +62,14 @@
                 </fieldset>
                 <fieldset>
                     <legend>Pick one option</legend>
-                    <label for="inquiry">General inquiry</label>
-                    <input type="radio" id="inquiry" name="requirement">
-                    <label for="question">Reservation Question</label>
-                    <input type="radio" id="Question" name="requirement">
-                    <label for="suggestion">Website Suggestion</label>
-                    <input type="radio" id="suggestion" name="requirement">
+                    <div class="radio">
+                        <label for="inquiry">General inquiry</label>
+                        <input type="radio" id="inquiry" name="requirement">
+                        <label for="question">Reservation Question</label>
+                        <input type="radio" id="Question" name="requirement">
+                        <label for="suggestion">Website Suggestion</label>
+                        <input type="radio" id="suggestion" name="requirement">
+                    </div>
                 </fieldset>
                 <div class="form-item column1">
                     <label for="subscribe">Please subscribe me to the monthly newsletter</label>
