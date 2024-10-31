@@ -1,49 +1,71 @@
-:root {
-    --primary-color: #fffcf2;
-    --secondary-color: #ccc5b9;
-    --accent1-color: #403d39;
-    --accent2-color: #eb5e28;
+body { 
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+    background-color: #fffcf2;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: var(--primary-color);
-    color: black;
-    margin: 0;
+header {
+    background-color: #ccc5b9;
     padding: 20px;
-    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo image and navigation */
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+nav.navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ccc5b9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2 {
-    color: black;
-    margin: 20px 0;
-    font-weight: bold;
     text-align: center;
+    font-size: 2rem;
+    color: #333;
 }
 
-p {
-    color: var(--accent1-color);
-    margin-bottom: 15px;
-}
-
-a img {
-    border: none;
-    text-decoration: none;
-}
-
-.sociallinks a img {
-    text-decoration: none;
-    height: auto;
-    background-color: var(--accent2-color);
-}
-
+hero 
 .hero {
     position: relative;
+    text-align: center;
     background-color: #ccc5b9;
 }
 
 .hero h1 {
     position: absolute;
+    text-align: center;
     top: 20px;
     left: 20px;
     color: #fffcf2;
@@ -55,14 +77,13 @@ a img {
     left: 20px;
     color: #fffcf2;
     padding: 15px;
-    background-color: #ccc5b9;
+    background-color: rgba(196, 183, 165, 0.8);
 }
 
 .hero article img {
     float: right;
     margin-left: 15px;
     max-width: 40%;
-    border: 2px;
 }
 
 .hero img {
@@ -71,52 +92,125 @@ a img {
     height: auto;
 }
 
-header {
-	margin: 1rem auto;
-	display: grid;
-	grid-template-columns: 120px 1fr 2fr;
-	align-items: center;
-	border-bottom: 1px solid #ccc;
-	max-width: 1000px;
-}
-
-.logo img {
-	margin: 0 0.25rem 0 1rem;
-	width: 100px;
-	height: auto;
-}
-
-nav {
-	text-align: right;
-}
-
-.navigation {
-	display: flex;
-	list-style: none;
-}
-
-.navigation a {
-	display: block;
-	color: navy;
-	padding: 20px;
-	text-decoration: none;
-}
-
-.navigation a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
-}
-
-.history {
+.adventure-gallery {
     display: grid;
-    align-items: center;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .adventure img {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.history img {
+    width: 150px;
+    height: auto;
+}
+
+.employee {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.employee img {
+    width: 100%;
+    height: auto;
+}
+
+.employee, form {
+    display: grid;
+    justify-content: center;
     align-items: stretch;
+}
+
+.contact {
+    text-align: center;
+}
+.map {
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1rem;
+    background-color: darkred;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: darkgreen;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #eb5e28;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #fff;
+    margin: 0;
+}
+
+footer .sociallinks img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
 }
