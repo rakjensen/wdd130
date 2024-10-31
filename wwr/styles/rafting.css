@@ -56,7 +56,6 @@ h1, h2 {
     color: #333;
 }
 
-hero 
 .hero {
     position: relative;
     text-align: center;
@@ -192,6 +191,18 @@ button:hover {
 .column2 {
     grid-template-columns: 1fr 2fr;
     margin: 0.5rem;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    justify-items: stretch;
+    column-gap: 20px;
+}
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Footer */
